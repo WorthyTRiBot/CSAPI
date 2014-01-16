@@ -22,7 +22,6 @@ public class CharlieSheenAPI {
 	private static boolean mousedOver = false;
 	private static Image charlieSheen;
 
-
 	/**
 	 * Fool newbies with random images of Charlie Sheen!
 	 * @param minTime - minimum time for him to appear in milliseconds
@@ -62,8 +61,6 @@ public class CharlieSheenAPI {
 		mousedOver = false;
 		startTime = bufferTime = System.currentTimeMillis();
 		charlieSheen = getImage("http://i.imgur.com/ZETc3Xf.png");
-		
-		General.println(appearTime);	//TODO delete
 	}
 
 	private boolean mousedOver(int posX, int posY) {
